@@ -134,7 +134,7 @@ def text_detection(img_path, weights, min_confidence):
         endY = int(endY * rH)
 
         # draw the bounding box on the image
-        cv2.rectangle(orig, (startX, startY), (endX, endY), (0, 255, 0), 3)
+        cv2.rectangle(orig, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
     return orig, total_time
 
